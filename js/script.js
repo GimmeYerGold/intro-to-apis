@@ -97,7 +97,7 @@ var legislatorToHTML = function(legislatorObject) {
 		'</h2><h3 class="legislatorParty">'+ 
 	party + ' - ' + 
 	nameConverter(stateNames, state) + '</h3>' +
-	
+
 	'<img src="' + legislatorObject.photo_url + '">' + 
 		'<ul class="contactList">' + 
 	'<li id="emailItem">' + 'email: ' + 
@@ -134,7 +134,7 @@ var inputEl = document.querySelector('input[type="text"]')
 
 var handleData = function(resultArray) {
 	var htmlString = ""
-	for (var i = 0; i < 10; i ++) {
+	for (var i = 0; i < 12; i ++) {
 			console.log(resultArray[i])
 			var legislatorObject = resultArray[i]
 			htmlString += legislatorToHTML(legislatorObject)
